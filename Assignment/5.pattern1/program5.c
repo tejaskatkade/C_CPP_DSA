@@ -26,3 +26,27 @@ void main()
         printf("\n");
     }
 }
+
+
+//or
+
+// #include<stdio.h>
+// void main()
+// {
+//     int num;
+//     printf("Enter the number of rows: ");
+//     scanf("%d",&num);
+
+    
+//     for(int i=0; i<num; i++)
+//     {
+//         char ch = 'A';
+//         for(int j=0; j<num; j++)
+//         {
+//             printf(" %c ",ch+i);
+//             ch++;
+//         }
+        
+//         printf("\n");
+//     }
+// }
