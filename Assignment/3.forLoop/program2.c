@@ -1,4 +1,4 @@
-//WaP to print the character whose ascii is a multiple of 3
+//WaP to print the character whose ascii is even
 
 #include<stdio.h>
 void main(){

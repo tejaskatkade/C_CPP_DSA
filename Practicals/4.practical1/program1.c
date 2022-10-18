@@ -8,11 +8,11 @@ void main(){
         scanf("%d",&num);
        
         for(i=1; i<=num;i++){
-				if(i%3!=0){
-           			//printf("%d",i);
-					sum = sum + i;
-               
-
+	
+        
+                if(i%3!=0){
+           	//printf("%d",i);
+		sum = sum + i;
                }
 				
         }printf("%d\n",sum);

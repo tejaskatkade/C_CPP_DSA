@@ -1,4 +1,4 @@
-//Multidimentional array
+//Multidimentional array 2-D
 
 #include<stdio.h>
 void main(){
