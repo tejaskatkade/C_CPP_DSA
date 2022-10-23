@@ -1,10 +1,13 @@
 #include<stdio.h>
 void main(){
-	int num=1;
+	
 	int row;
+	
+
 	printf("Enter the row\n");
 	scanf("%d",&row);
-
+	char ch = 96+row;
+	
 	for(int i=1; i<=row; i++)
 	{	
 		for(int j=1; j<i; j++)
@@ -14,10 +17,11 @@ void main(){
 		}
 		for(int k=row;k>=i;k--)	
 		{
-			printf("  %d  ",num);
+			printf("  %c  ",ch);
 		
-			num++;
+			
 		}
+		ch--;
 		printf("\n");
 	}
 }

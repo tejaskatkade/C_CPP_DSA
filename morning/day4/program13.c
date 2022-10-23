@@ -5,20 +5,21 @@ void main()
 	int end;
 	
 	printf("Enter the start :\n");
-	Scanf("%d",&start);
+	scanf("%d",&start);
 	printf("Enter the end :\n");
-	Scanf("%d",&end);
+	scanf("%d",&end);
 	
 	int store=1;
 	int num = end - start;
-	for(int i=0; i<=num; i++){
-		while(start>=1){
-			store= store*start;
-			start--;
+	for(int i=start; i<=end; i++){
+		int j=i;
+		while(j<=i){
+			store= store*j;
+			j++;
 		}
-		printf("Factorial of %d is %d: \n",i is )
+		printf("Factorial of %d is %d: \n",i,store);
 	}
 	
-	printf("Factorial is :%d\n",store);
+	
 	
 }

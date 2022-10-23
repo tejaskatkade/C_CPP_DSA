@@ -1,23 +1,31 @@
 #include<stdio.h>
-void main(){
-	int num=1;
+void main()
+{
 	int row;
 	printf("Enter the row\n");
 	scanf("%d",&row);
-
+	
+	char ch = row+64;
 	for(int i=1; i<=row; i++)
 	{	
+		
 		for(int j=1; j<i; j++)
 		{
 			printf("     ");
 				
 		}
-		for(int k=row;k>=i;k--)	
+		for(int k=i;k<=row;k++)	
 		{
-			printf("  %d  ",num);
+			if(i%2==1){
+				printf("  %c  ",ch);
 		
-			num++;
+			}else{
+				printf("  %c  ",ch+32);
+			}
+		
 		}
+		ch--;
+		
 		printf("\n");
 	}
 }
