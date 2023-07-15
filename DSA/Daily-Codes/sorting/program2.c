@@ -16,16 +16,16 @@ void bubbleSort(int arr[],int size){
 	}
 
 }
-int* mergeSort(int arr1[],int arr2[],int size1,int size2){
+int* mergeArr(int arr1[],int arr2[],int size1,int size2){
 	int j = 0;
 	int k = 0;
 
 	int* arr3=(int *)malloc((size1+size2)*sizeof(int));
 	for(int i=0; i<size1+size2; i++){
 		if(j == size1){
-			arr3[i]=arr2[k];
+			arr3[i]=arr2[k++];
 		}else if(k == size2){
-			arr3[i]=arr1[j];
+			arr3[i]=arr1[j++];
 		}else{
 			if(arr1[j]>arr2[k]){
 				arr3[i]=arr2[k];
@@ -41,10 +41,10 @@ int* mergeSort(int arr1[],int arr2[],int size1,int size2){
 
 void main(){
 	int arr1[4]={6,5,3,7};
-	int arr2[5]={2,5,10,4,6};
+	int arr2[7]={2,5,10,4,6,1,3};
 
 	bubbleSort(arr1,4);
-	bubbleSort(arr2,5);
+	bubbleSort(arr2,7);
 	printf("Sorted array\n");
 	printf("arr1\n");
 	for(int i=0; i<4; i++){
@@ -54,17 +54,17 @@ void main(){
 	}
 	printf("\n");
 	printf("arr2\n");
-	for(int i=0; i<5; i++){
+	for(int i=0; i<7; i++){
 	
 		printf("%d ",arr2[i]);
 
 	}
 	printf("\n");
 
-	int * arr3 = mergeSort(arr1,arr2,4,5);
+	int * arr3 = mergeArr(arr1,arr2,4,7);
 
 	printf("arr3\n");
-	for(int i=0; i<9; i++){
+	for(int i=0; i<11; i++){
 	
 		printf("%d ",arr3[i]);
 
