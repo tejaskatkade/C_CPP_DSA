@@ -8,10 +8,10 @@ int main(){
 	{
 	
 		int x = 20;
-		std::cout<<x<<std::endl;  // variable shadowing
+		std::cout<<x<<std::endl; // 20 // variable shadowing
 
 		x = 30;
-		std::cout<<x<<std::endl;
+		std::cout<<x<<std::endl; // 30
 	}
 	return 0;
 
